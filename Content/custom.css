@@ -1,0 +1,283 @@
+
+#page-content {
+    display:none;
+}
+
+.cube {
+   -webkit-transform: translateZ(0);
+   -moz-transform: translateZ(0);
+   -ms-transform: translateZ(0);
+   -o-transform: translateZ(0);
+   transform: translateZ(0);
+
+   -webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+   -ms-backface-visibility: hidden;
+   backface-visibility: hidden;
+
+   -webkit-perspective: 1000;
+   -moz-perspective: 1000;
+   -ms-perspective: 1000;
+   perspective: 1000;
+
+   -webkit-transform: translate3d(0, 0, 0);
+   -moz-transform: translate3d(0, 0, 0);
+   -ms-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+}
+
+#load_time {
+    position: absolute;
+    top: 0px;
+    z-index: 1000;
+    color: red;
+    font-size:12px;
+}
+
+.ll {
+   left:10px;
+}
+.rr {
+    right:10px;
+}
+
+#copyright-box {
+    display:none;
+}
+
+#share {
+    position: absolute;
+    bottom: 25%;
+    left: 25%;
+    width:48%;
+}
+
+#power{
+    position: absolute;
+    bottom: 12%;
+    left: 32%;
+    width:34%;
+}
+
+.page .only
+{
+	width:100%;
+    float:left;
+    bottom:0px;
+    position:absolute;
+    left:0px;
+}
+
+.page .pleft
+{
+	width:48%;
+    float:left;
+    left:2%;
+    bottom:0px;
+    position:absolute;
+}
+
+.page .pright
+{
+	width: 48%;
+    float:right;
+    right:2%;
+	position: absolute;
+	bottom: 0;	
+	z-index: 0;
+}
+
+
+#share-wx {
+    display:none;
+    width:100%;
+    height:100%;
+    background:black;
+    opacity:0.8;
+}
+#share-wx p {
+    text-align: right; 
+    padding-left: 10px;
+}
+#share-wx p img {
+    max-width: 280px; padding-right: 25px;
+}
+.share{
+	position: absolute;
+	width: 100%;
+	bottom: 50px;
+	left: 0;
+}
+
+
+/*---------------------------------版权 开始---------------------------------------------*/
+#light_copyright{
+	position: absolute;
+	left: 20px;
+	bottom: 10px;
+	z-index: 100;
+	font-size: 12px;
+	color: rgb(250, 250, 254);
+	padding: 4px;
+	background: black;
+	border-radius: 4px;
+	opacity: 0.7;	
+}
+
+#power_div{
+	position: absolute;
+	z-index: 100;
+	left: 10%;
+    width:80%;
+    top: 0px;
+	font-size: 14px;
+	margin-top: 100px;
+	background: white;
+	border-radius: 10px;
+	overflow:hidden;	
+}
+/*---------------------------------版权 结束---------------------------------------------*/
+
+
+
+/*---------------------------------音乐  张宝媛开始----------------------------------------------*/
+#music {
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	right: -5%; 
+    bottom: -20px; 
+	z-index: 500;
+	visibility: hidden;
+}
+
+/*.u-globalAudio { 
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 24px; 
+    position:absolute; 
+    right: -80%; 
+    bottom: 28px; 
+    display: block; 
+    z-index: 9999;
+	width:100%;
+	height:48px;
+}*/
+.music {
+	width: 28px;
+	height: 28px;
+	background: url(/images/music.png) no-repeat center center;
+	background-size: 100%;
+	/*background-color: rgba(255,255,255,.2);*/
+	border-radius: 50%;
+    opacity:0.8
+}
+
+.play {
+	animation: r 1.2s linear infinite;
+	-webkit-animation: r 1.2s linear infinite;
+}
+
+#music > span {
+	color: #fff;
+	position: absolute;
+	left: -124px;
+	left: -16VW;
+	top: 0;
+	line-height: 64px;
+	line-height: 8VW;
+	font-size: 36px;
+	font-size: 4VW;
+	opacity: 0;
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+#music > span.zshow {
+	left: -86px;
+	left: -9VW;
+	opacity: 1;
+}
+
+.musics {
+	width: 18px;
+	height: 26px;
+	position: absolute;
+	left: -12px;
+	bottom: 0;
+}
+
+.musics span {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes r {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@-webkit-keyframes r {
+	0% {
+		-webkit-transform: rotate(0);
+	}
+
+	100% {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+/*---------------------------------音乐  张宝媛结束----------------------------------------------*/
+.form-control {
+  display: block;
+  height: 22px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.form-control:-moz-placeholder {
+  color: #999999;
+}
+.form-control::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999999;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999999;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+.p9 {
+    margin-bottom: 12px;
+    margin-left: 10%;
+}

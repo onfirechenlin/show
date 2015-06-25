@@ -1,0 +1,29 @@
+﻿/*@功能*/
+.recipients-tips{
+	position:absolute; 
+	background:#fff; 
+	z-index:2147483647; 
+	padding:2px; 
+	border:4px solid #d6dfc0; 
+	display:none;
+	
+}
+/*@功能*/
+.recipients-tips li a{
+	display:block; 
+	padding:6px 5px; 
+	color:#333; 
+	cursor:pointer; 
+}
+/*@功能*/
+.recipients-tips li a em{
+	font-weight:700; 
+	color:#000; 
+}
+
+/*@功能*/
+.autoSelected{
+	background:#fdeed4;
+}
+
+
